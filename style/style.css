@@ -1,0 +1,45 @@
+@import "../assets/animate.css";
+
+body {
+    overflow: hidden;
+    background: #1e1e1e;
+}
+
+canvas {
+    width: 100%;
+    height: 100%
+}
+
+/* Set style for charage buttons: */
+.charge-btns {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+.set-charge {
+    background: transparent;
+    padding: 0;
+    border: none;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    outline: none !important;
+}
+
+/* Style charts */
+.chart {
+    padding: 50px 8px;
+}
+
+
+/* Style "about" section */
+.about {
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    font-family: monospace;
+    bottom: 4px;
+    right: 4px;
+}
