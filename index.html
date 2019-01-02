@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physics Charges and Forces</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Links:-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/elastic-tabs.css">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+<div class="elastic-tabs">
+    <div class="tabs-container text-center">
+        <nav class="tabs app-tabs">
+            <div class="selector"></div>
+            <a class="tab" href="#sphere" data-render="sphere"><i class="fas fa-burn"></i>Sphere</a>
+            <!-- because this tab is not for three.js apps , set render to no-render -->
+            <a class="tab active" href="#sphere-chart" data-render="no-render">sphere chart</a>
+            <a class="tab" href="#game" data-render="game">game</a>
+            <a class="tab" href="#chips" data-render="chips">chips</a>
+            <a class="tab" href="#chips-game" data-render="chipsGame">chips game</a>
+        </nav>
+    </div>
+
+
+    <div class="tabs-content">
+        <div class="tb-content animated fadeIn" id="sphere"></div>
+        <div class="tb-content animated fadeIn" id="sphere-chart">
+            <canvas class="chart" id="sphere-chart-canvas"></canvas>
+        </div>
+        <div class="tb-content animated fadeIn" id="game">
+            <div class="charge-btns">
+                <button class="set-charge" style="background: #2AE1B7" data-charge="1">+</button>
+                <button class="set-charge" style="background: #f7370b" data-charge="-1">-</button>
+            </div>
+        </div>
+        <div class="tb-content animated fadeIn" id="chips"></div>
+        <div class="tb-content animated fadeIn" id="chips-game">
+            <div class="charge-btns">
+                <button class="set-charge" style="background: #2AE1B7" data-charge="1">+</button>
+                <button class="set-charge" style="background: #f7370b" data-charge="-1">-</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="about">Programmed by <span style="color: #f7370b">Mehr.prs</span></div>
+
+<!--scripts:-->
+<script type="text/javascript" src="assets/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/three.js"></script>
+<script type="text/javascript" src="assets/OrbitControls.js"></script>
+<script type="text/javascript" src="assets/Chart.bundle.min.js"></script>
+
+<!-- Application -->
+<script type="text/javascript" src="js/elastic-tabs.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
